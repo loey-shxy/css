@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: #9c27b0;
+  border: 20px dashed #2196f3;
+  position: relative;
+}
+
+.box1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+}
+
+.box2 {
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 20px dashed #cccc99;
+}
+.box2::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background-color: #996699;
+  z-index: -1;
+}
+.box3 {
+  border: 20px dashed rgba(0, 0, 0, .6);
+  background-image: url(../../3d/images/sunset.jpg);
+  background-size: cover;
+}

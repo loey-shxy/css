@@ -1,0 +1,33 @@
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 0;
+  height: 100%;
+  border-bottom: 2px solid #000;
+  transition: .3s all linear;
+}
+
+li:hover::before {
+  width: 100%;
+  left: 0;
+  top: 0;
+  transition-delay: .1s;
+}
+
+li:hover ~ li::before {
+  left: 0;
+}

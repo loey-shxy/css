@@ -1,0 +1,17 @@
+.container {
+  width: 200px;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+    display: inline-block;
+    text-align: left;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box; /* 设置display，将对象作为弹性伸缩盒子模型显示 */
+    -webkit-line-clamp: 2; /* 限制在一个块元素显示的文本行数 */
+    -webkit-box-orient: vertical; /* 规定框的子元素应该被水平或垂直排列 */
+}

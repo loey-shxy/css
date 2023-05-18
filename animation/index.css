@@ -1,0 +1,50 @@
+/* 动画只运行一次，未运行时处于第一帧，运行完后处于最后一帧 */
+/* 通过 hover 驱动 */
+/* animation-fill-mode 控制元素在各个阶段的状态 */
+/* animation-fill-mode: backwards: 可以让元素在动画开始之前的样式为动画运行时的第一帧，动画结束后的样式则恢复为 css 规则设定的样式 */
+/* animation-fill-mode: forwards: 元素在动画开始之前的样式为css对着设定的样式，而动画结束后的样式则由执行期间遇到的最后一个关键帧计算值（即停留在最后一帧） */
+/* animation-fill-mode: both: 兼顾以上两种模式的特点，可以使得动画开始的样式为动画运行时的第一帧，动画结束后停留在最后一帧 */
+/* 反向利用 animation-play-state 实现 hover 触发动画进行 */
+p {
+  position: relative;
+  font-family: monospace;
+  width: 30ch;
+  animation: typing 3s steps(15, end);
+  animation-fill-mode: both;
+  animation-play-state: paused;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 48px;
+}
+
+p:hover {
+  animation-play-state: running;
+}
+
+p::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  animation: blink .8s linear infinite;
+}
+
+@keyframes blink {
+  0%, 50% {
+    border-right: 2px solid transparent;
+  }
+  50%, 100% {
+    border-right: 2px solid #000;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 11ch;
+  }
+  to {
+    width: 30ch;
+  }
+}

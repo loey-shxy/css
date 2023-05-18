@@ -1,0 +1,72 @@
+.contaienr {
+  display: flex;
+}
+
+img.left {
+  width: 600px;
+  --x: 10px; /* 预设变量 */
+  --y: 20px;
+  outline: var(--y) solid rgba(0, 0, 0, .4); /* 添加一个轮廓 */
+  outline-offset: calc(-1*var(--y)); /* 添加轮廓偏移 */
+  padding: var(--y) var(--y) var(--y) 0; /* 保留图片左侧的轮廓遮罩 */
+  /* 使用路径裁切 clip-path, 将图片裁剪出一个多边形(polygon) */
+  clip-path: polygon(
+    var(--y) var(--y),
+    calc(100% - var(--y)) var(--y),
+    calc(100% - var(--y)) calc(100% - var(--y)),
+    var(--y) calc(100% - var(--y)),
+    0 calc(100% - var(--x) - var(--y)),
+    0 calc(var(--x) + var(--y))
+
+  );
+  /* 使用透视效果 */
+  /* 相当于在z轴上距离原点1000px处放置了投影仪，然后将图在y轴上顺时针旋转40度 */
+  transform: perspective(1000px) rotateY(40deg);
+  transition: 1s all;
+}
+
+img.left:hover {
+  transform: perspective(1000px) rotateY(0deg);
+  clip-path: polygon(
+    var(--y) var(--y),
+    calc(100% - var(--y)) var(--y),
+    calc(100% - var(--y)) calc(100% - var(--y)),
+    var(--y) calc(100% - var(--y)),
+    var(--y) calc(100% - var(--x) - var(--y)),
+    var(--y) calc(var(--x) + var(--y))
+  );
+}
+
+img.bottom {
+  width: 600px;
+  --x: 10px; /* 预设变量 */
+  --y: 20px;
+  outline: var(--y) solid rgba(0, 0, 0, .4); /* 添加一个轮廓 */
+  outline-offset: calc(-1*var(--y)); /* 添加轮廓偏移 */
+  padding: var(--y) var(--y) 0 var(--y); /* 保留图片底侧的轮廓遮罩 */
+  /* 使用路径裁切 clip-path, 将图片裁剪出一个多边形(polygon) */
+  clip-path: polygon(
+    var(--y) var(--y),
+    calc(100% - var(--y)) var(--y),
+    calc(100% - var(--y)) calc(100% - var(--y)),
+    calc(100% - var(--y) - var(--x)) 100%,
+    calc(var(--y) + var(--x)) 100%,
+    var(--y) calc(100% - var(--y))
+  );
+  /* 使用透视效果 */
+  /* 相当于在z轴上距离原点1000px处放置了投影仪，然后将图在y轴上顺时针旋转40度 */
+  transform: perspective(1000px) rotateX(40deg);
+  transition: 1s all;
+}
+
+img.bottom:hover {
+  transform: perspective(1000px) rotateX(0deg);
+  clip-path: polygon(
+    var(--y) var(--y),
+    calc(100% - var(--y)) var(--y),
+    calc(100% - var(--y)) calc(100% - var(--y)),
+    calc(100% - var(--y)) calc(100% - var(--y)),
+    var(--y) calc(100% - var(--y)),
+    var(--y) calc(100% - var(--y))
+  );
+}

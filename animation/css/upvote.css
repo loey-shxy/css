@@ -1,0 +1,312 @@
+@charset "UTF-8";
+html, body { width: 100%; height: 100%; background-color: #000; display: flex; align-items: center; justify-content: center; }
+
+ul { list-style: none; }
+
+.wrap { position: relative; width: 50px; height: 50px; }
+
+.wrap::before { content: "👍🏼"; position: absolute; width: 50px; height: 50px; line-height: 50px; text-align: center; transition: 0.1s; font-size: 42px; }
+
+.wrap:active::before { transform: scale(1.1); }
+
+li:nth-child(1) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(4.27691deg); animation: move 3263.57614ms infinite -0.12835s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(1)::before { content: "🤘"; position: absolute; font-size: 50px; }
+
+li:nth-child(1):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(2) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(-37.5434deg); animation: move 3694.51615ms infinite -3.1714s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(2)::before { content: "👍🏼"; position: absolute; font-size: 50px; }
+
+li:nth-child(2):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(3) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(-34.94011deg); animation: move 2151.17698ms infinite -2.18009s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(3)::before { content: "🤘"; position: absolute; font-size: 50px; }
+
+li:nth-child(3):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(4) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(37.6843deg); animation: move 3676.28365ms infinite -0.66662s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(4)::before { content: "🤩"; position: absolute; font-size: 50px; }
+
+li:nth-child(4):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(5) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(29.45623deg); animation: move 3357.5772ms infinite -2.21289s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(5)::before { content: "👍🏼"; position: absolute; font-size: 50px; }
+
+li:nth-child(5):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(6) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(-37.15953deg); animation: move 2722.53142ms infinite -2.30632s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(6)::before { content: "💕"; position: absolute; font-size: 50px; }
+
+li:nth-child(6):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(7) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(29.60131deg); animation: move 2854.5837ms infinite -2.53592s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(7)::before { content: "🤩"; position: absolute; font-size: 50px; }
+
+li:nth-child(7):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(8) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(-19.4822deg); animation: move 3770.45292ms infinite -3.50625s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(8)::before { content: "🤣"; position: absolute; font-size: 50px; }
+
+li:nth-child(8):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(9) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(22.48192deg); animation: move 3852.59142ms infinite -2.13087s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(9)::before { content: "💚"; position: absolute; font-size: 50px; }
+
+li:nth-child(9):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(10) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(20.49207deg); animation: move 3504.2473ms infinite -0.20902s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(10)::before { content: "👍🏼"; position: absolute; font-size: 50px; }
+
+li:nth-child(10):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(11) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(9.95981deg); animation: move 3947.41225ms infinite -2.18903s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(11)::before { content: "❤️"; position: absolute; font-size: 50px; }
+
+li:nth-child(11):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(12) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(-27.82271deg); animation: move 2193.75404ms infinite -3.50629s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(12)::before { content: "❤️"; position: absolute; font-size: 50px; }
+
+li:nth-child(12):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(13) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(18.05662deg); animation: move 1955.7781ms infinite -2.05676s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(13)::before { content: "🤩"; position: absolute; font-size: 50px; }
+
+li:nth-child(13):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(14) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(36.2126deg); animation: move 1756.12154ms infinite -2.13385s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(14)::before { content: "💓"; position: absolute; font-size: 50px; }
+
+li:nth-child(14):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(15) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(-23.59762deg); animation: move 3507.224ms infinite -0.01431s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(15)::before { content: "😻"; position: absolute; font-size: 50px; }
+
+li:nth-child(15):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(16) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(23.90273deg); animation: move 3114.95206ms infinite -2.87674s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(16)::before { content: "🎈"; position: absolute; font-size: 50px; }
+
+li:nth-child(16):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(17) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(-16.54107deg); animation: move 3663.9076ms infinite -0.74892s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(17)::before { content: "😻"; position: absolute; font-size: 50px; }
+
+li:nth-child(17):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(18) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(-8.21035deg); animation: move 1561.02476ms infinite -1.18583s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(18)::before { content: "😀"; position: absolute; font-size: 50px; }
+
+li:nth-child(18):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(19) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(-23.84502deg); animation: move 3467.13161ms infinite -3.67927s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(19)::before { content: "😀"; position: absolute; font-size: 50px; }
+
+li:nth-child(19):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(20) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(36.05955deg); animation: move 3651.5397ms infinite -1.73639s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(20)::before { content: "🤘"; position: absolute; font-size: 50px; }
+
+li:nth-child(20):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(21) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(-21.50711deg); animation: move 3619.67487ms infinite -1.9269s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(21)::before { content: "👏"; position: absolute; font-size: 50px; }
+
+li:nth-child(21):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(22) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(30.23842deg); animation: move 3004.82556ms infinite -1.7017s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(22)::before { content: "❤️"; position: absolute; font-size: 50px; }
+
+li:nth-child(22):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(23) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(-12.79673deg); animation: move 2745.48173ms infinite -0.55157s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(23)::before { content: "🤘"; position: absolute; font-size: 50px; }
+
+li:nth-child(23):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(24) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(33.21591deg); animation: move 2206.61103ms infinite -2.92222s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(24)::before { content: "👏"; position: absolute; font-size: 50px; }
+
+li:nth-child(24):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(25) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(-19.59626deg); animation: move 3195.61927ms infinite -0.84844s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(25)::before { content: "😻"; position: absolute; font-size: 50px; }
+
+li:nth-child(25):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(26) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(-12.02695deg); animation: move 2697.32117ms infinite -3.75223s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(26)::before { content: "🐮"; position: absolute; font-size: 50px; }
+
+li:nth-child(26):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(27) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(27.97881deg); animation: move 3477.08365ms infinite -3.81958s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(27)::before { content: "❤️"; position: absolute; font-size: 50px; }
+
+li:nth-child(27):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(28) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(18.09434deg); animation: move 3608.93269ms infinite -1.38974s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(28)::before { content: "🎈"; position: absolute; font-size: 50px; }
+
+li:nth-child(28):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(29) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(-3.60135deg); animation: move 3963.37695ms infinite -3.09122s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(29)::before { content: "😀"; position: absolute; font-size: 50px; }
+
+li:nth-child(29):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(30) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(-9.54727deg); animation: move 3309.46098ms infinite -2.10165s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(30)::before { content: "🤘"; position: absolute; font-size: 50px; }
+
+li:nth-child(30):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(31) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(-18.38475deg); animation: move 3095.95767ms infinite -3.45798s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(31)::before { content: "💚"; position: absolute; font-size: 50px; }
+
+li:nth-child(31):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(32) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(35.63005deg); animation: move 2673.52301ms infinite -1.93452s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(32)::before { content: "🤘"; position: absolute; font-size: 50px; }
+
+li:nth-child(32):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(33) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(-13.53206deg); animation: move 3137.98911ms infinite -3.57319s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(33)::before { content: "💓"; position: absolute; font-size: 50px; }
+
+li:nth-child(33):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(34) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(-30.90557deg); animation: move 3810.59535ms infinite -3.27622s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(34)::before { content: "🎈"; position: absolute; font-size: 50px; }
+
+li:nth-child(34):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(35) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(11.88288deg); animation: move 2181.82988ms infinite -1.89821s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(35)::before { content: "💕"; position: absolute; font-size: 50px; }
+
+li:nth-child(35):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(36) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(17.20514deg); animation: move 2935.19857ms infinite -1.86439s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(36)::before { content: "🤡"; position: absolute; font-size: 50px; }
+
+li:nth-child(36):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(37) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(-34.13749deg); animation: move 3464.5653ms infinite -0.8913s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(37)::before { content: "🤩"; position: absolute; font-size: 50px; }
+
+li:nth-child(37):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(38) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(9.34754deg); animation: move 3773.20808ms infinite -2.89985s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(38)::before { content: "🐮"; position: absolute; font-size: 50px; }
+
+li:nth-child(38):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(39) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(-11.10652deg); animation: move 3477.9843ms infinite -0.17152s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(39)::before { content: "🎈"; position: absolute; font-size: 50px; }
+
+li:nth-child(39):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(40) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(-26.86834deg); animation: move 2682.27373ms infinite -0.55718s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(40)::before { content: "💕"; position: absolute; font-size: 50px; }
+
+li:nth-child(40):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(41) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(10.01638deg); animation: move 2270.06383ms infinite -3.18512s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(41)::before { content: "💚"; position: absolute; font-size: 50px; }
+
+li:nth-child(41):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(42) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(5.315deg); animation: move 3736.93657ms infinite -0.7203s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(42)::before { content: "😻"; position: absolute; font-size: 50px; }
+
+li:nth-child(42):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(43) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(15.80649deg); animation: move 3907.88835ms infinite -2.05475s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(43)::before { content: "😀"; position: absolute; font-size: 50px; }
+
+li:nth-child(43):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(44) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(-17.01264deg); animation: move 2237.10062ms infinite -0.72564s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(44)::before { content: "🤡"; position: absolute; font-size: 50px; }
+
+li:nth-child(44):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(45) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(13.73578deg); animation: move 2080.20862ms infinite -3.5526s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(45)::before { content: "😻"; position: absolute; font-size: 50px; }
+
+li:nth-child(45):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(46) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(20.2318deg); animation: move 3293.3695ms infinite -2.85742s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(46)::before { content: "🤣"; position: absolute; font-size: 50px; }
+
+li:nth-child(46):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(47) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(23.55488deg); animation: move 3558.3668ms infinite -2.89772s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(47)::before { content: "🤣"; position: absolute; font-size: 50px; }
+
+li:nth-child(47):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(48) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(6.05295deg); animation: move 3853.58434ms infinite -2.36991s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(48)::before { content: "👍🏼"; position: absolute; font-size: 50px; }
+
+li:nth-child(48):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(49) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(-2.24719deg); animation: move 2380.95503ms infinite -0.96128s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(49)::before { content: "💕"; position: absolute; font-size: 50px; }
+
+li:nth-child(49):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+li:nth-child(50) { position: absolute; top: 0; left: 0; width: 50px; height: 50px; transform: rotate(-35.942deg); animation: move 3871.52718ms infinite -1.07044s cubic-bezier(0.46, 0.53, 0.51, 0.62); opacity: 0; transition: 1.5s opacity 0.8s; }
+
+li:nth-child(50)::before { content: "❤️"; position: absolute; font-size: 50px; }
+
+li:nth-child(50):active { opacity: 1 !important; transition: 0.1s opacity; }
+
+@keyframes move { 100% { transform: rotate(0) translate(0, -100px); } }

@@ -1,0 +1,39 @@
+.container {
+  position: relative;
+  width: 300px;
+  height: 100px;
+
+  .content {
+    height: 100px;
+    filter: contrast(20);
+    background-color: #fff;
+    overflow: hidden;
+
+    .filter {
+      height: 100px;
+      filter: blur(10px); /* 高斯模糊 */
+      background: radial-gradient(circle at 50% -10px, transparent 0, transparent 39px, #000 40px, #000);
+    }
+  }
+}
+
+.arc {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  filter: contrast(20);
+  background-color: #fff;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    filter: blur(7px);
+    border: 25px solid transparent;
+    border-bottom: 25px solid #000;
+    border-radius: 50%;
+  }
+}

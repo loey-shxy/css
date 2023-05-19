@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100px;
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+}
+.type1 {
+  background: linear-gradient(90deg, #ffc700 0%, #e91e1e 50%, #6f27b0 100%);
+  background-size: 200% 100%;
+  background-position: 0 0;
+  animation: bgposition 2s infinite linear alternate;
+}
+
+@keyframes bgposition {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.type2 {
+  margin-top: 10px;
+  background: linear-gradient(90deg, #ffc700 0%, #e91e1e 33%, #6f27b0 66%, #00ff88 100%);
+  background-position: 100% 0;
+  animation: bgSize 5s infinite ease-in-out alternate;
+}
+
+@keyframes bgSize {
+  0% {
+    background-size: 300% 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+.type3 {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    bottom: -100%;
+    right: -100%;
+    background: linear-gradient(45deg, #ffc700 0%, #e91e1e 50%, #6f27b0 100%);
+    background-size: 100% 100%;
+    animation: type3Bgposition 5s infinite linear alternate;
+    z-index: -1;
+  }
+}
+
+@keyframes type3Bgposition {
+  0% {
+    transform: translate(30%, 30%);
+  }
+  25% {
+    transform: translate(30%, -30%);
+  }
+  50% {
+    transform: translate(-30%, -30%);
+  }
+  75% {
+    transform: translate(-30%, 30%);
+  }
+  100% {
+    transform: translate(30%, 30%);
+  }
+}
+
+.type4 {
+  background: linear-gradient(45deg, #ffc700, #e91e1e, #6f27b0);
+  animation: hueRotate 10s infinite alternate;
+}
+
+@keyframes hueRotate {
+  0% {
+    filter: hue-rotate(0);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@property --colorA {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #ffc700;
+}
+@property --colorB {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #f79188;
+}
+@property --colorC {
+  syntax: '<color>'; /* 该自定义属性的语法规则 */
+  inherits: false; /* 是否允许继承 */
+  initial-value: #e91e1e; /* 初始值 */
+}
+
+.type5 {
+  background: linear-gradient(45deg,
+      var(--colorA),
+      var(--colorB),
+      var(--colorC));
+  animation: change 10s infinite linear;
+}
+
+@keyframes change {
+  20% {
+    --colorA: #e91e1e;
+    --colorB: #a93ee0;
+    --colorC: #ffc700;
+  }
+  40% {
+    --colorA: #ff3c41;
+    --colorB: #e228a0;
+    --colorC: #2e4c96;
+  }
+  60% {
+    --colorA: orange;
+    --colorB: green;
+    --colorC: teal;
+  }
+  80% {
+    --colorA: #ae63e4;
+    --colorB: #0ebeff;
+    --colorC: #efc371;
+  }
+}

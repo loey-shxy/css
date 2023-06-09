@@ -1,0 +1,33 @@
+@import "./utils.scss";
+
+$count: 32;
+
+.container {
+  column-count: 4;
+  column-gap: .5vw;
+  padding-top: .5vw;
+}
+
+.item {
+  position: relative;
+  width: 24vw;
+  margin-bottom: 1vw;
+  break-inside: avoid; // 避免在元素内部插入分页符
+}
+
+@for $i from 1 to $count+1 {
+  .item:nth-child(#{$i}) {
+    height: #{randomNum(300, 50)}px;
+    background: randomColor();
+
+    &::after {
+      content: "#{$i}";
+      position: absolute;
+      color: #fff;
+      font-size: 2vw;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

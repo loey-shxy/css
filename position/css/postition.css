@@ -1,0 +1,57 @@
+.box {
+  height: 400px;
+  background-color: #ffcc99;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+.box:not(:first-child) {
+  margin-top: 20px;
+}
+
+.image {
+  background-image: url(../../3d/images/sunset.jpg);
+  height: 400px;
+  width: 700px;
+  background-size: cover;
+  background-color: #fafafa;
+  position: relative;
+}
+.image::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  background-image: inherit;
+  transform: rotateX(180deg);
+  background-size: cover;
+}
+
+.parent {
+  height: 800px;
+  width: 500px;
+  color: #ffcc99;
+  border: 1px solid #000;
+}
+.children {
+  width: 300px;
+  height: 200px;
+  margin: 20px auto;
+  color: aquamarine;
+  border: 1px solid #ffcc99;
+}
+.color {
+  color: #000;
+}
+.unset {
+  color: unset;
+  border: unset;
+}
+.text-unset {
+  font-weight: unset;
+}
+.text-revert {
+  font-weight: revert;
+}

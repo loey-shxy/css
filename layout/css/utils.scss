@@ -1,0 +1,7 @@
+@function randomNum($max, $min: 0, $u: 1) {
+  @return ($min + random($max)) * $u
+}
+
+@function randomColor() {
+  @return rgb(randomNum(255), randomNum(255), randomNum(255))
+}
